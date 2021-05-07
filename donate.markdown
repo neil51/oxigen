@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title:  "Call for donations!"
 date:   2021-05-07 19:34:40 +0530
-categories: funding prototype
+permalink: /donate
 ---
 Hello dear reader. You might have found this webpage through one of several platforms that we are running our campaign on. To begin, here is some information about us that might be important for you to know:
 
