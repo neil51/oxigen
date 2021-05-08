@@ -6,10 +6,10 @@ permalink: /pay
 If you prefer not going through the campaign on [Milaap](/milaap), you may send the money via UPI to any of the above addresses on your preferred UPI apps. 
 
 ### UPI details:
-**Google Pay** - neilreon@oksbi  
-**PayTM** - 6361915247@paytm  
-**BHIM** - neilrm@upi  
-**PhonePe** - 6361915247@axl  
+You may click the links to view the QR code for the respective UPI vendors. This might be useful if you're reading this on a computer, and want to pay through your phone.  
+[**Google Pay**](/assets/qr/gpay.png) - [neilreon@oksbi](/assets/qr/gpay.png)  
+[**PayTM**](/assets/qr/paytm.png) - [6361915247@paytm](/assets/qr/paytm.png)  
+[**PhonePe**](/assets/qr/phonepe.png) - [6361915247@axl](/assets/qr/phonepe.png)  
 
 If you want to pay directly to my bank account, you may send the funds to the below account:
 
