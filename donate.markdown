@@ -14,7 +14,7 @@ For this, we will (urgently) require around 1 Lakh Rupees in funds, by the lates
 
 These funds will be used to procure the raw materials necessary to make a prototype oxygen concentrator, titled Oxigen 1.0. We will also require certain equipment to ensure the output of our device is medically-safe and is suitable for use in hospitals. 
 
-You can find our campaign on Milaap. 
+You can find our campaign on [Milaap](https://milaap.org/fundraisers/support-neil-6). 
 
 A complete explanation of each Rupee of crowd-fund spent on this project will be an inefficient use of our time as we are a short-staffed team with geographical restrictions. But do not be mistaken, your money will be spent ONLY for the purpose of immediate prototyping and manufacturing of Oxigen devices. 
 

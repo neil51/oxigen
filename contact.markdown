@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Contact
+permalink: /contact/
 ---
 
 Email: [neilreon@gmail.com](mailto:neilreon+oxy@gmail.com)  
