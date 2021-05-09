@@ -1,5 +1,6 @@
 ---
 layout: page
+sitemap: true
 title:  "Call for donations!"
 date:   2021-05-07 19:34:40 +0530
 permalink: /donate

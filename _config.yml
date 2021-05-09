@@ -22,7 +22,7 @@ url: oxigen.netlify.app
 author:
   name: Neil Mathias
   twitter:
-  picture:
+  picture: /assets/logo_design.png
 twitter_username:
 github_username:
 logo: /assets/logo_design.png

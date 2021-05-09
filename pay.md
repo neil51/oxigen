@@ -1,9 +1,10 @@
 ---
 title: "Payments"
+sitemap: true
 layout: page
 permalink: /pay
 ---
-If you prefer not going through the campaign on [Milaap](/milaap), you may send the money via UPI to any of the above addresses on your preferred UPI apps. 
+If you prefer not going through the campaign on [Milaap](/milaap), you may send the money via UPI to any of the below addresses on your preferred UPI apps. 
 
 ### UPI details:
 You may click the links to view the QR code for the respective UPI vendors. This might be useful if you're reading this on a computer, and want to pay through your phone.  

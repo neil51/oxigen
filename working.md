@@ -1,6 +1,7 @@
 ---
 title: "Working principle"
 layout: page
+sitemap: true
 image: /assets/Schematic.jpg
 permalink: /working
 ---
