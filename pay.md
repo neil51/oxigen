@@ -4,7 +4,7 @@ sitemap: true
 layout: page
 permalink: /pay
 ---
-You can either fund our campaign on [Milaap](/milaap). If you choose not to go through a third-party, you may also send the money via UPI to any of the below addresses on your preferred UPI apps. 
+You can help us reach our goal on [Milaap](/milaap). If you choose not to go through a third-party, you may also send the money via UPI to any of the below addresses on your preferred UPI apps. 
 
 ### UPI details:
 You may click the links to view the QR code for the respective UPI vendors. This might be useful if you're reading this on a computer, and want to pay through your phone.  
