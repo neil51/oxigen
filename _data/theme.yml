@@ -35,6 +35,7 @@ google_fonts:
 
 navigation_pages:
   - donate.markdown
+  - campaign.html
   - contact.markdown
   - working.md
   - pay.md
