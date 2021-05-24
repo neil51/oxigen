@@ -4,12 +4,8 @@
   <link rel="shortcut icon" href="{{ site.favicon }}" />
   <meta property="og:type" content="{{ page.layout | default: website}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="{{ page.og | default: site.logo}}">
 
-  {% if site.og %}
-    <meta property="og:image" content="{{ page.og }}">
-  {% else %}
-    <meta property="og:image" content="{{ page.image | default: site.logo }}">
-  {% endif %}
 
   {% if site.plugins contains 'jekyll-seo-tag' or site.gems contains 'jekyll-seo-tag' %}
     {% comment %}
