@@ -17,7 +17,8 @@ lang: en-US
 title: Oxigen
 email: neilreon+oxigen@gmail.com
 favicon: /assets/favicon.ico
-description:
+tagline: Building oxygen concentrators for India
+description: We're engineering students who want to prototype and later mass-produce low-cost oxygen concentrators for India
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: oxigen.site
 author:
