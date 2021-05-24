@@ -1,10 +1,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="{{ page.og | default: site.logo}}">
   <link rel="shortcut icon" href="{{ site.favicon }}" />
   <meta property="og:type" content="{{ page.layout | default: website}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="{{ page.og | default: site.logo}}">
+
 
 
   {% if site.plugins contains 'jekyll-seo-tag' or site.gems contains 'jekyll-seo-tag' %}
