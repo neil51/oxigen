@@ -15,10 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 lang: en-US
 title: Oxigen
-email:
+email: neilreon+oxigen@gmail.com
+favicon: /assets/favicon.ico
 description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: oxigen.netlify.app
+url: oxigen.site
 author:
   name: Neil Mathias
   twitter:
