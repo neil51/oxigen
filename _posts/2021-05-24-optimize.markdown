@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Optimization Code"
+date:   2021-05-24 18:54:40 +0530
+permalink: /code
+---
+Here is a brief overview of the [code](https://github.com/navneeth824/O2_conc_optimization/blob/master/O2%20calculation.py) we use to optimize various parameters of our prototype. 
+
+The [code](https://github.com/navneeth824/O2_conc_optimization/blob/master/O2%20calculation.py) can calculate Mass of zeolite (in kg), Volume of column (in m3), Area of column (in m2), Radius of column (in m), Length of column (in m), and L/D ratio of column.  
+
+Oxygen output(L/min), flow rate from compressor, and superficial velocity are the only independent variables in the code. Other variables are calculated in the code. The independent variables are varied so as to satisfy the below requirements:  
+- Length of column/Diameter of column L/D = 3-10 (the smaller the better for lower pressure drop)
+- Diameter of column/Diameter of pellet = 10 (to avoid channeling effects)
+- In addition to satisfying point 1, the length and diameter of column must be practically feasible and your judgement should be used here.
+- The superficial velocity should be between 0.1-0.3 m/s. 0.2 m/s is a reasonable choice according to some experts.
+- Check your compressor specifications before deciding flow rate. Some flowrates maybe unattainable on your compressor. Hence confirm if flow rates from code can attain the flow rate obtained from the code.  
+
+#### Background of the code:
+- A rough rule of thumb for oxygen production would be 1.5 L/kg 13X/min. Volume of 13X (m3) = mass of 13X (in kg)/1130 (kg/m3)
+- Volume of the column (m3) = Volume of 13X/ (0.65). 0.65 comes from random packing of the 13X pellets in the column.
+- Decide on the compressor (high pressure of 5-6 bar (absolute) should be a good one). Get the flow rate (in m3/s) at the delivery pressure.
+- Compute the cross-section area (A (m2)) of the column = Volumetric flow rate(m3/s) / Superficial velocity(m/s)
+- Based on the volume from point 2, compute the length of the column (L) = Volume of the column (m3) / (pi*r**2)
+- If point 4(in requirements) is completely satisfied, you are good to go. If not, you would have to adjust the flow rate coming from the compressor in step 3, to achieve the goals in point 4(in requirements).  
+
+In the final setup, just have some space on the top and bottom of the column to add a couple of mesh to avoid pellets leaving the column and for good distribution of the gas.
+Keep the dead volume of the system as small as possible. This translates to short pipes and removing any unnecessary long tubing in the setup.
+
+
+
