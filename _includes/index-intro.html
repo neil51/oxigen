@@ -16,7 +16,7 @@
         {% if page.sub_title %}
           <p class="intro-subtitle">{{ page.sub_title | markdownify | strip_html }}</p>
         {% endif %}
-  
+        <p>{% include counter.html %}</p>
         {% if page.date %}
           {% include author %}
           <p class="entry-meta">
@@ -38,7 +38,6 @@
           </ul>
           <ul class="intro-actions"><li><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HEyu1QVEYSZSab" async> </script> </form>
           </li></ul>
-          <p>{% include counter.html %}</p>
         {% endif %}
       </div>
     </div>
