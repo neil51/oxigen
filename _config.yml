@@ -48,6 +48,8 @@ plugins: # previsously gems
   - jekyll-redirect-from
 feed:
   path: atom.xml
+  categories: 
+  - posts
 
 # Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 5
