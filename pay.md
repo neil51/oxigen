@@ -21,3 +21,4 @@ If you want to pay directly to my bank account (in case you are an international
 **IFSC code**: SBIN0001617  
 **Branch**: R E C Tiruchirapalli  
 **MICR Code**: 620002009  
+**SWIFT Code**: SBININBB467
