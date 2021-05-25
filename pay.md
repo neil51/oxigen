@@ -3,12 +3,13 @@ title: "Payments"
 sitemap: true
 layout: page
 permalink: /pay
+sub_title: You may choose to donate to our fundraiser on [Milaap](/milaap) or donate to us directly via Razorpay.
 actions:
   - label: "Donate on Milaap"
     icon: heart
     url: "/milaap"
 ---
-# Donate using Credit Card, Debit Card, Netbanking, or UPI:
+## Donate using Credit Card, Debit Card, Netbanking, or UPI:
 <section id="categories" markdown="1">
 <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HEyu1QVEYSZSab" async> </script> </form>
 </section>  
