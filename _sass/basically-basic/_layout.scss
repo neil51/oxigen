@@ -8,6 +8,32 @@
   overflow: hidden;
 }
 
+.fund {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: 34px;
+  background-image: url(https://razorpay.com/assets/topbar/unlock-growth/desk-banner.svg),linear-gradient(91.71deg,#fff .03%,#fff 90.98%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  background-size: cover;
+  outline: none;
+}
+
+.fund-text {
+  @include fluid-type($min-vw, $max-vw, 14px, 24px);
+  color: #0054a2;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3px;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -19,6 +45,7 @@
   z-index: 100;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  padding-top: 46px;
 }
 
 .intro,

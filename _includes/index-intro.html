@@ -16,7 +16,6 @@
         {% if page.sub_title %}
           <p class="intro-subtitle">{{ page.sub_title | markdownify | strip_html }}</p>
         {% endif %}
-        <p>{% include counter.html %}</p>
         {% if page.date %}
           {% include author %}
           <p class="entry-meta">
