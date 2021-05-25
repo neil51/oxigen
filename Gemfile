@@ -31,6 +31,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Neil's additions begin here
 gem "jekyll-theme-basically-basic"
 gem "jekyll-redirect-from"
+gem "airrecord"
 
 group :jekyll_plugins do
   gem "jekyll-paginate"

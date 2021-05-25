@@ -1,5 +1,14 @@
-<div class="intro-subtitle">Donations received: INR <a id="value">100</a></div>
-<script>function animateValue(obj, start, end, duration) {
+<div class="intro-subtitle">Donations received: ₹ <a id="value">100</a></div>
+<script>
+  const start = async() => {
+    let a = await
+    fetch("https://api.airtable.com/v0/appXUFR1TBPtG6y03/Table%201?api_key=keyeEL4P1RV2Vj8dt")
+    let b = await a.json()
+    animateValue(obj, 0, b.records[0].fields.FUND, 2500);
+}
+start()
+
+function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
@@ -13,5 +22,5 @@
   }
   
   const obj = document.getElementById("value");
-  animateValue(obj, 0, 8362, 2500);</script>
+</script>
  
