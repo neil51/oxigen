@@ -10,9 +10,9 @@ layout: default
 
 <form id="calc">
     
-    <div class="intro-subtitle">Required Production of Oxygen in LPM: <input style="margin: 4px; width: 20%;" width="100%" type="number" placeholder="Oxygen (in LPM)" name="oxy" id="oxy" /></div> <br>
-    <div class="intro-subtitle">Flow rate (compressor specification) in m3/s: <input style="margin: 4px; width: 20%;" width="100%" type="number" placeholder="Flow rate (in m3/s)" name="Flow" id="flow" /></div> <br>
-    <div class="intro-subtitle">Superficial velocity in m/s: <input style="margin: 4px; width: 20%;" width="100%" type="number" placeholder="Superficial Velocity (in m/s)" name="Velocity" id="spr" /></div> <br>
+    <div class="intro-subtitle">Required Production of Oxygen in LPM: <input style="margin: 4px; width: 50%;" width="100%" type="number" placeholder="Oxygen (in LPM)" name="oxy" id="oxy" /></div> <br>
+    <div class="intro-subtitle">Flow rate (compressor specification) in LPM: <input style="margin: 4px; width: 50%;" width="100%" type="number" placeholder="Flow rate (in LPM)" name="Flow" id="flow" /></div> <br>
+    <div class="intro-subtitle">Superficial velocity in m/s (suggested value 0.1): <input style="margin: 4px; width: 50%;" width="100%" type="number" placeholder="Superficial Velocity (in m/s)" name="Velocity" id="spr" /></div> <br>
 </form>
 
 
@@ -27,10 +27,11 @@ layout: default
             const oxy_production = document.getElementById("oxy").value // O2 production, L/min - input from user
             const mass_13x = oxy_production / 1.5 // mass of 13x, kg
             const vol_13x = mass_13x / 1130 // volume of 13x, L
-            const flw_rate = document.getElementById("flow").value // flow rate, m3/s - input from user
+            const flw_rate = document.getElementById("flow").value // flow rate, lpm - input from user
+ //           const flw_rate = document.getElementById("flow").value // flow rate, m3/s - input from user
             const spr_vel = document.getElementById("spr").value // superficial velocity, m/s - input from user
             const vol_col = vol_13x / 0.65 // 
-            const area_col = flw_rate / spr_vel // area of column, m2
+            const area_col = flw_rate / (60000*spr_vel) // area of column, m2
             const dia_col = (4 * area_col / 3.14) ** (0.5) // radius of column, m
             const length_col = vol_col / (3.14 * area_col) // length of column, m
 
