@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<h1>
+    Calculator App
+</h1>
+<h3>
+    To calculate required flow rate of compressor and dimensions of column
+</h3>
+
+<form id="calc">
+    <input style="margin: 8px; width: 15%;" width="100%" type="number" placeholder="Required Production of Oxygen in LPM" name="oxy" id="oxy" /> <br>
+    <input style="margin: 8px; width: 15%;" width="100%" type="number" placeholder="Flow rate of compressor in LPM" name="Flow" id="flow" /> <br>
+    <input style="margin: 8px; width: 15%;" width="100%" type="number" placeholder="Superficial Velocity in m/s" name="Velocity" id="spr" /> <br>
+</form>
+
+
+<div class="highlighter-rouge">
+    <figure class="gist">
+    <code id="output"/>
+    </figure></pre></div> 
+
+
+
+<script>
+    const onChange = () => {
+            console.log("hi")
+            const oxy_production = document.getElementById("oxy").value // O2 production, L/min - input from user
+            const mass_13x = oxy_production / 1.5 // mass of 13x, kg
+            const vol_13x = mass_13x / 1130 // volume of 13x, L
+            const flw_rate = document.getElementById("flow").value // flow rate, m3/s - input from user
+            const spr_vel = document.getElementById("spr").value // superficial velocity, m/s - input from user
+            const vol_col = vol_13x / 0.65 // 
+            const area_col = flw_rate / spr_vel // area of column, m2
+            const dia_col = (4 * area_col / 3.14) ** (0.5) // radius of column, m
+            const length_col = vol_col / (3.14 * area_col) // length of column, m
+
+// rounding off: Math.round((num + Number.EPSILON) * 100) / 100
+// Math.round((39.37*dia_col + Number.EPSILON) * 100) / 100
+// 39.37*dia_col
+
+// output:
+            document.getElementById("output").innerHTML = `Mass of zeolite(in kg): ${Math.round((mass_13x + Number.EPSILON) * 100) / 100} <br>
+    Volume of column (in m3): ${vol_col} <br>
+    Area of column (in m2): ${area_col} <br>
+    Diameter of column (in inch): ${Math.round((39.37*dia_col + Number.EPSILON) * 100) / 100} <br>
+    Length of column (in inch): ${Math.round((39.37*length_col + Number.EPSILON) * 100) / 100} <br>
+    L/D ratio of column: ${Math.round(((length_col/dia_col) + Number.EPSILON) * 100) / 100} <br>`
+        }
+        [...document.getElementsByTagName("input")].forEach(elem => {
+            elem.addEventListener('input', onChange)
+        })
+</script>
